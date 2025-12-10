@@ -62,7 +62,7 @@ export default function System() {
                     + 맥주 + 음료 무제한<br />
                     + 진안주 모듬과일
                   </TableCell>
-                  <TableCell className="text-primary font-bold text-center py-6 text-2xl neon-text">16만원</TableCell>
+                  <TableCell className="text-primary font-bold text-center py-6 text-2xl neon-text">10만원</TableCell>
                 </TableRow>
                 <TableRow className="border-white/10 hover:bg-white/5 transition-colors">
                   <TableCell className="font-medium text-white text-center py-6 text-lg">T/C (티시)</TableCell>
@@ -70,7 +70,7 @@ export default function System() {
                     담당 매니저 케어<br />
                     (시간 제한 없음)
                   </TableCell>
-                  <TableCell className="text-primary font-bold text-center py-6 text-2xl neon-text">14만원</TableCell>
+                  <TableCell className="text-primary font-bold text-center py-6 text-2xl neon-text">12만원</TableCell>
                 </TableRow>
                 <TableRow className="border-white/10 hover:bg-white/5 transition-colors">
                   <TableCell className="font-medium text-white text-center py-6 text-lg">R/T (룸티)</TableCell>
