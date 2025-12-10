@@ -48,14 +48,15 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-20 container mx-auto h-full flex flex-col justify-center items-center text-center px-4 pt-20">
           <div className={`transition-all duration-1000 transform ${isLoaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
-            <h2 className="text-primary font-bold tracking-widest mb-4 text-sm md:text-base uppercase">Gangnam No.1 Karaoke</h2>
+            <h2 className="text-primary font-bold tracking-widest mb-4 text-sm md:text-base uppercase">강남 가라오케 추천 1위</h2>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              강남의 새로운 중심<br />
+              강남 가라오케의 중심  
+
               <span className="text-gold-gradient">퍼펙트 가라오케</span>
             </h1>
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-              최고의 시설과 합리적인 정찰제 가격으로 모십니다.<br className="hidden md:block" />
-              비즈니스 접대부터 프라이빗한 파티까지, 완벽한 시간을 약속드립니다.
+              강남 가라오케 중 최고의 시설과 합리적인 정찰제 가격으로 모십니다.<br className="hidden md:block" />
+              강남 가라오케 룸, 비즈니스 접대부터 프라이빗한 파티까지 완벽한 시간을 약속드립니다.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/reservation">
@@ -90,9 +91,10 @@ export default function Home() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
                 <Star className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">투명한 정찰제</h3>
+              <h3 className="text-xl font-bold text-white mb-4">강남 가라오케 정찰제</h3>
               <p className="text-gray-400 leading-relaxed">
-                추가금 없는 투명한 가격 정책으로<br />
+                추가금 없는 투명한 가격 정책으로  
+
                 신뢰할 수 있는 서비스를 제공합니다.
               </p>
             </div>
@@ -102,9 +104,10 @@ export default function Home() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
                 <Users className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">강남 최대 규모</h3>
+              <h3 className="text-xl font-bold text-white mb-4">강남 가라오케 최대 규모</h3>
               <p className="text-gray-400 leading-relaxed">
-                50개 이상의 다양한 컨셉 룸 완비.<br />
+                50개 이상의 다양한 컨셉 룸 완비.  
+
                 소규모 모임부터 대형 회식까지 가능합니다.
               </p>
             </div>
@@ -114,9 +117,10 @@ export default function Home() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
                 <Clock className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">24시간 연중무휴</h3>
+              <h3 className="text-xl font-bold text-white mb-4">24시간 강남 가라오케</h3>
               <p className="text-gray-400 leading-relaxed">
-                언제든지 편하게 문의주세요.<br />
+                언제든지 편하게 문의주세요.  
+
                 항상 친절하게 모시겠습니다.
               </p>
             </div>
@@ -136,7 +140,8 @@ export default function Home() {
               화려한 <span className="text-gold-gradient">퍼포먼스 & 캐스팅</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              매일 밤 펼쳐지는 전문 댄스팀의 환상적인 공연과<br />
+              매일 밤 펼쳐지는 전문 댄스팀의 환상적인 공연과  
+
               강남 최고의 퀄리티를 자랑하는 캐스팅 라인업을 만나보세요.
             </p>
           </div>
@@ -208,13 +213,14 @@ export default function Home() {
             <div className="lg:w-1/2">
               <h4 className="text-primary font-bold tracking-widest mb-2 uppercase">Why Choose Us</h4>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                강남 퍼펙트 가라오케만의<br />
+                강남 가라오케 퍼펙트만의  
+
                 <span className="text-gold-gradient">특별한 가치</span>
               </h2>
               <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-                단순한 유흥 공간을 넘어, 귀하의 품격에 맞는 최고의 서비스를 제공합니다. 
+                단순한 유흥 공간을 넘어, 강남 가라오케 중 귀하의 품격에 맞는 최고의 서비스를 제공합니다. 
                 최신 음향 시설과 고급스러운 인테리어, 그리고 철저한 직원 교육을 통해 
-                방문하시는 모든 분들께 잊지 못할 추억을 선사합니다.
+                강남 가라오케를 찾으시는 모든 분들께 잊지 못할 추억을 선사합니다.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center gap-3 text-gray-300">
