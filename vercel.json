@@ -1,0 +1,26 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "perfect-karaoke.vercel.app"
+        }
+      ],
+      "destination": "https://www.gangnamkaraoketop.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "gangnamkaraoketop.com"
+        }
+      ],
+      "destination": "https://www.gangnamkaraoketop.com/:path*",
+      "permanent": true
+    }
+  ]
+}
