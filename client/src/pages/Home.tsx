@@ -28,7 +28,6 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <SEO />
-      
       {/* Hero Section */}
       <section className="relative h-screen w-full overflow-hidden bg-black">
         <div className="absolute inset-0 z-0" ref={emblaRef}>
@@ -45,7 +44,6 @@ export default function Home() {
             ))}
           </div>
         </div>
-
         <div className="relative z-20 container mx-auto h-full flex flex-col justify-center items-center text-center px-4 pt-20">
           <div className={`transition-all duration-1000 transform ${isLoaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
             <h2 className="text-primary font-bold tracking-widest mb-4 text-sm md:text-base uppercase">강남가라오케 추천 1위</h2>
@@ -54,8 +52,7 @@ export default function Home() {
               <span className="text-gold-gradient">퍼펙트 가라오케</span>
             </h1>
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-              강남가라오케 중 최고의 시설과 합리적인 정찰제 가격으로 모십니다.<br className="hidden md:block" />
-              강남가라오케 룸, 비즈니스 접대부터 프라이빗한 파티까지 완벽한 시간을 약속드립니다.
+              강남가라오케 중 최고의 시설과 합리적인 정찰제 가격으로 모십니다.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/reservation">
@@ -63,203 +60,52 @@ export default function Home() {
                   지금 바로 예약하기
                 </Button>
               </Link>
-              <Link href="/system">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black font-bold text-lg px-8 py-6 h-auto w-full sm:w-auto">
-                  시스템 및 가격 확인
-                </Button>
-              </Link>
-            </div>
-          </div>
-          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white/50">
-            <div className="flex flex-col items-center gap-2">
-              <span className="text-xs uppercase tracking-widest">Scroll Down</span>
-              <ChevronDown className="h-6 w-6" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-20 bg-background">
+      {/* SEO Section (사장님이 요청하신 문구 적용) */}
+      <section className="py-16 bg-secondary/20 border-t border-white/5">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-card border border-white/5 p-8 rounded-xl text-center hover:border-primary/30 transition-colors group">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
-                <Star className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-4">강남가라오케 정찰제</h3>
-              <p className="text-gray-400 leading-relaxed">
-                추가금 없는 투명한 가격 정책으로<br />
-                신뢰할 수 있는 서비스를 제공합니다.
-              </p>
-            </div>
-            <div className="bg-card border border-white/5 p-8 rounded-xl text-center hover:border-primary/30 transition-colors group">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
-                <Users className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-4">강남가라오케 최대 규모</h3>
-              <p className="text-gray-400 leading-relaxed">
-                50개 이상의 다양한 컨셉 룸 완비.<br />
-                소규모 모임부터 대형 회식까지 가능합니다.
-              </p>
-            </div>
-            <div className="bg-card border border-white/5 p-8 rounded-xl text-center hover:border-primary/30 transition-colors group">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
-                <Clock className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-4">24시간 강남가라오케</h3>
-              <p className="text-gray-400 leading-relaxed">
-                언제든지 편하게 문의주세요.<br />
-                항상 친절하게 모시겠습니다.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Special Performance Section */}
-      <section className="py-24 bg-black relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/20 blur-[100px] rounded-full pointer-events-none" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h4 className="text-accent font-bold tracking-widest mb-2 uppercase animate-pulse">Special Event</h4>
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              화려한 <span className="text-gold-gradient">퍼포먼스 & 캐스팅</span>
-            </h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              매일 밤 펼쳐지는 전문 댄스팀의 환상적인 공연과<br />
-              강남 최고의 퀄리티를 자랑하는 캐스팅 라인업을 만나보세요.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-            <div className="group relative rounded-2xl overflow-hidden border border-primary/30 neon-box">
-              <div className="aspect-[4/3] bg-gray-900 relative">
-                <img src="/images/slide4.jpg" alt="Special Dance Performance" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 p-8">
-                <h3 className="text-2xl font-bold text-white mb-2 neon-text">Special Dance Team</h3>
-                <p className="text-gray-300">눈을 뗄 수 없는 화려한 무대 매너와 퍼포먼스</p>
-              </div>
-            </div>
-            <div className="group relative rounded-2xl overflow-hidden border border-accent/30 neon-box">
-              <div className="aspect-[4/3] bg-gray-900 relative">
-                <img src="/images/slide5.jpg" alt="Premium Casting Lineup" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 p-8">
-                <h3 className="text-2xl font-bold text-white mb-2 neon-text">Premium Casting</h3>
-                <p className="text-gray-300">엄격한 기준으로 선발된 최고의 라인업</p>
-              </div>
-            </div>
-          </div>
-          <div className="mt-12 text-center">
-            <Link href="/gallery">
-              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-black font-bold px-8">갤러리 더 보기</Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* About Preview Section */}
-      <section className="py-20 bg-secondary/30 border-y border-white/5">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2">
-              <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl neon-box">
-                <img src="/images/slide2.jpg" alt="Perfect Karaoke Interior" className="w-full h-auto" />
-              </div>
-            </div>
-            <div className="lg:w-1/2">
-              <h4 className="text-primary font-bold tracking-widest mb-2 uppercase">Why Choose Us</h4>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                강남가라오케 퍼펙트만의<br />
-                <span className="text-gold-gradient">특별한 가치</span>
-              </h2>
-              <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-                단순한 유흥 공간을 넘어, 강남가라오케 중 귀하의 품격에 맞는 최고의 서비스를 제공합니다. 
-                최신 음향 시설과 고급스러운 인테리어, 그리고 철저한 직원 교육을 통해 
-                모든 분들께 잊지 못할 추억을 선사합니다.
-              </p>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-center gap-3 text-gray-300">
-                  <CheckCircle2 className="h-5 w-5 text-primary" />
-                  <span>최신식 음향 시스템 및 대형 모니터 완비</span>
-                </li>
-                <li className="flex items-center gap-3 text-gray-300">
-                  <CheckCircle2 className="h-5 w-5 text-primary" />
-                  <span>프라이버시가 보장되는 독립된 룸 구조</span>
-                </li>
-              </ul>
-              <Link href="/about">
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-black">자세히 알아보기</Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SEO Section - 업체 상세 설명 */}
-      <section className="py-20 bg-black border-t border-white/5">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-card/30 p-8 md:p-12 rounded-3xl border border-primary/10">
+          <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">
               강남가라오케 No.1 퍼펙트 – 시스템 및 예약 안내
             </h2>
-            <div className="space-y-8 text-gray-300 leading-relaxed text-lg">
+            <div className="space-y-6 text-gray-300 leading-relaxed">
               <p>
                 강남의 중심에서 최고의 시설과 품격 있는 서비스를 제공하는 강남가라오케 퍼펙트입니다. 
                 저희는 고객 한 분 한 분의 소중한 시간을 위해 투명한 정찰제와 최상의 룸 컨디션을 유지하고 있습니다.
               </p>
-              
-              <div>
+              <div className="pt-4">
                 <h3 className="text-xl font-bold text-primary mb-4">■ 차별화된 시스템</h3>
                 <ul className="space-y-3 pl-4">
-                  <li><strong className="text-white">강남 최대 규모:</strong> 대형 룸부터 프라이빗한 소형 룸까지 다양한 공간을 완비하여 비즈니스 접대, 생일 파티, 단체 회식에 최적화되어 있습니다.</li>
-                  <li><strong className="text-white">최첨단 음향 시설:</strong> 최고급 스피커와 최신 노래방 시스템을 도입하여 최상의 만족도를 드립니다.</li>
-                  <li><strong className="text-white">철저한 위생 관리:</strong> 매일 진행되는 방역과 청결 관리를 통해 쾌적한 환경을 보장합니다.</li>
+                  <li><strong className="text-white">강남 최대 규모:</strong> 비즈니스 접대, 생일 파티, 단체 회식에 최적화되어 있습니다.</li>
+                  <li><strong className="text-white">최첨단 음향 시설:</strong> 최고급 스피커와 최신 노래방 시스템을 도입하였습니다.</li>
+                  <li><strong className="text-white">철저한 위생 관리:</strong> 매일 진행되는 방역과 청결 관리를 통해 쾌적합니다.</li>
                 </ul>
               </div>
-
-              <div>
+              <div className="pt-4">
                 <h3 className="text-xl font-bold text-primary mb-4">■ 합리적인 가격 가이드</h3>
                 <p>
-                  강남가라오케 이용 시 가장 궁금해하시는 가격 부분을 투명하게 안내해 드립니다. 
-                  위스키, 맥주 세트 등 다양한 주종별 구성을 합리적인 비용으로 만나보실 수 있으며, 
-                  사전 예약 시 추가 혜택을 제공하고 있습니다. 상세한 견적은 유선 문의 주시면 실시간으로 안내해 드립니다.
+                  강남가라오케 가격 부분을 투명하게 안내해 드립니다. 사전 예약 시 추가 혜택을 제공하고 있습니다.
                 </p>
               </div>
-
-              <div>
+              <div className="pt-4">
                 <h3 className="text-xl font-bold text-primary mb-4">■ 자주 묻는 질문 (FAQ)</h3>
-                <div className="space-y-6">
+                <div className="space-y-4">
                   <div>
-                    <p className="font-bold text-white mb-2">Q: 혼자 방문해도 이용이 가능한가요?</p>
-                    <p className="pl-4 border-l-2 border-primary/30">A: 네, 혼자 오시는 고객님들을 위한 전용 시스템과 1인 예약 상담을 운영하고 있어 부담 없이 방문하실 수 있습니다.</p>
+                    <p className="font-bold text-white mb-1">Q: 혼자 방문해도 이용이 가능한가요?</p>
+                    <p className="pl-4 text-gray-400">A: 네, 1인 예약 상담을 운영하고 있어 부담 없이 방문하실 수 있습니다.</p>
                   </div>
                   <div>
-                    <p className="font-bold text-white mb-2">Q: 주차 공간이 넉넉한가요?</p>
-                    <p className="pl-4 border-l-2 border-primary/30">A: 넓은 주차 공간을 보유하고 있으며, 전문 발렛 파킹 서비스를 지원하여 편리한 방문이 가능합니다.</p>
+                    <p className="font-bold text-white mb-1">Q: 주차 공간이 넉넉한가요?</p>
+                    <p className="pl-4 text-gray-400">A: 전문 발렛 파킹 서비스를 지원하여 편리한 방문이 가능합니다.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-black relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/slide3.jpg')] bg-cover bg-center opacity-20" />
-        <div className="container mx-auto px-4 relative z-10 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            오늘 밤, <span className="text-primary">퍼펙트</span>한 시간을 예약하세요
-          </h2>
-          <Link href="/reservation">
-            <Button size="lg" className="bg-primary text-black hover:bg-primary/90 font-bold text-xl px-10 py-8 h-auto rounded-full">
-              예약 및 문의하기
-            </Button>
-          </Link>
         </div>
       </section>
     </div>
