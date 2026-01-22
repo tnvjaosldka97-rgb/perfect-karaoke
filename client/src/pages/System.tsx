@@ -67,7 +67,7 @@ export default function System() {
                 <TableRow className="border-white/10 hover:bg-white/5 transition-colors">
                   <TableCell className="font-medium text-white text-center py-6 text-lg">T/C (티시)</TableCell>
                   <TableCell className="text-gray-300 text-center py-6">
-                    담당 매니저 케어<br /
+                    담당 매니저 케어
                   </TableCell>
                   <TableCell className="text-primary font-bold text-center py-6 text-2xl neon-text">12만원</TableCell>
                 </TableRow>
