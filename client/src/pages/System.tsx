@@ -75,6 +75,7 @@ export default function System() {
                   <TableCell className="font-medium text-white text-center py-6 text-lg">R/T (룸티)</TableCell>
                   <TableCell className="text-gray-300 text-center py-6">
                     VIP 룸 이용료<br />
+                    (시간 제한 없음)
                   </TableCell>
                   <TableCell className="text-primary font-bold text-center py-6 text-2xl neon-text">5만원</TableCell>
                 </TableRow>
